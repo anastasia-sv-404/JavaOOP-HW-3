@@ -40,6 +40,7 @@ public class Main {
 
         Collections.sort(house.getPets());// Сортируем список питомцев в доме по возрасту (по возрастанию).
         house.print();
+        System.out.println();
 
 //        if (!house.isEmpty()) {
 //            getActionsWithPet(house, human);
