@@ -88,10 +88,12 @@ public class Main {
     static void giveFoodToOlderPet(Pet p1, Pet p2, Human human){
         if (p1.compareTo(p2) < 0){
             human.giveFoodToPet(p2);
+            human.giveFoodToPet(p1);
         } else if (p1.compareTo(p2) > 0) {
             human.giveFoodToPet(p1);
+            human.giveFoodToPet(p2);
         } else{
-            System.out.println("Человек не смог выбрать питомца, которого нужно покормить.");
+            System.out.println("Человек не смог выбрать питомца, которого нужно покормить первым.");
         }
     }
 }
